@@ -4,6 +4,8 @@ allCountries.txt
 .pyc
 *.DS_Store
 environment_variables.sh
+env/
+geonames_index/
 
 # premium data
 airports.txt
