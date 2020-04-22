@@ -1,3 +1,5 @@
+Forked and updated to work with Elasticsearch 7.x.
+
 ES-Geonames
 ===========
 
