@@ -112,7 +112,7 @@ def documents(reader, es):
                     "modification_date" : todays_date
                    }
             action = {"_index" : "geonames",
-                      "_type" : "geoname",
+                      # "_type" : "geoname",
                       "_id" : doc['geonameid'],
                       "_source" : doc}
             yield action
@@ -123,7 +123,7 @@ def documents(reader, es):
 if __name__ == "__main__":
     t = time.time()
 
-    f = open('allCountries-small.txt', 'rt')
+    f = open('../../allCountries.txt', 'rt')
     #f = open('shortcountries.txt', 'rt')
 
     reader = csv.reader(f, delimiter='\t')
